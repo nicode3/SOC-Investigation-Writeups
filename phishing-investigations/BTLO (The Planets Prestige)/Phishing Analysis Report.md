@@ -1,14 +1,14 @@
-Phishing Email Analysis Report
+# Phishing Email Analysis Report
 
-📌 Executive Summary
-**Target/Lab:** BTLO - The Planets Prestige  
-**Analysis Date:** 2021-01-26 01:41:18 EST  
+## 📌 Executive Summary
+>**Target/Lab:** BTLO - The Planets Prestige  
+
 
 On **2021-01-26 01:41:18 EST**, a representative of the President received a malicious phishing email delivered as `A Hope to CoCanDa.eml`. The email originated via the online spoofing service `emkei[.]cz` (`93.99.104[.]210`). The message falsely claimed that the President’s daughter was being held hostage for ransom, sent by threat actor **Pestero Nageja** operating from *The Martian Colony (Besides Interplanetary Spaceport)*.
 
 ---
 
-🎯 Incident Overview (5 Ws & How)
+## 🎯 Incident Overview (5 Ws & How)
 
 * **WHO:** Pestero Nageja (Malicious Actor operating from The Martian Colony)
 * **WHAT:** Phishing email claiming to hold the President's daughter hostage for ransom
@@ -19,7 +19,7 @@ On **2021-01-26 01:41:18 EST**, a representative of the President received a mal
 
 ---
 
-🔍 Indicators of Compromise (IOCs)
+## 🔍 Indicators of Compromise (IOCs)
 
 | Type | Indicator / Detail |
 | :--- | :--- |
@@ -31,7 +31,7 @@ On **2021-01-26 01:41:18 EST**, a representative of the President received a mal
 
 ---
 
-🛡️ Remediation Recommendations
+## 🛡️ Remediation Recommendations
 
 - [ ] **Block IOCs:** Immediately block `emkei[.]cz`, `pashter[.]com`, and IP address `93.99.104[.]210` at perimeter firewalls, DNS filters, and mail gateways.
 - [ ] **Mail Gateway Filtering:** Flag and quarantine all incoming mail containing headers associated with `emkei[.]cz` or containing `pashter[.]com` in the `Reply-To` header.
